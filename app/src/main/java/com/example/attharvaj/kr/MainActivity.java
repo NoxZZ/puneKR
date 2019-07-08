@@ -4,17 +4,18 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
+import com.google.android.material.navigation.NavigationView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Gravity;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -23,6 +24,175 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageButton transport = (ImageButton)findViewById(R.id.imageButton_transport);
+
+        transport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
+                // If the navigation drawer is not open then open it, if its already open then close it.
+                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);
+                    // Handle the camera action
+                    Intent i = new Intent(MainActivity.this, Transport.class);
+                    startActivity(i);
+            }
+
+        });
+
+        ImageButton restaurants = (ImageButton)findViewById(R.id.imageButton_restaurants);
+
+        restaurants.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
+                // If the navigation drawer is not open then open it, if its already open then close it.
+                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);
+                // Handle the camera action
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=Restaurants");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+
+        });
+
+
+        ImageButton outskirts = (ImageButton)findViewById(R.id.imageButton_outskirts);
+
+        outskirts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
+                // If the navigation drawer is not open then open it, if its already open then close it.
+                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);
+                // Handle the camera action
+                Intent i = new Intent(MainActivity.this, Outskirts.class);
+                startActivity(i);
+            }
+
+        });
+
+        ImageButton police = (ImageButton)findViewById(R.id.imageButton_police_stn);
+
+        police.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
+                // If the navigation drawer is not open then open it, if its already open then close it.
+                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);
+                // Handle the camera action
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=Police Station");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+
+        });
+
+        ImageButton petrolPumps = (ImageButton)findViewById(R.id.imageButton_petrolPumps);
+
+        petrolPumps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
+                // If the navigation drawer is not open then open it, if its already open then close it.
+                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);
+                // Handle the camera action
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=Petrol pumps");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+
+        });
+
+
+        ImageButton mechanic = (ImageButton)findViewById(R.id.imageButton_garage);
+
+        mechanic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
+                // If the navigation drawer is not open then open it, if its already open then close it.
+                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);
+                // Handle the camera action
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=mechanics");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+
+        });
+
+
+
+        ImageButton touristPlaces = (ImageButton)findViewById(R.id.imageButton_touristPlaces);
+
+        touristPlaces.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
+                // If the navigation drawer is not open then open it, if its already open then close it.
+                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);
+                // Handle the camera action
+                Intent i = new Intent(MainActivity.this, tourist.class);
+                startActivity(i);
+
+            }
+
+        });
+
+
+
+        ImageButton hospitals = (ImageButton)findViewById(R.id.imageButton_hospitals);
+
+        hospitals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
+                // If the navigation drawer is not open then open it, if its already open then close it.
+                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);
+                // Handle the camera action
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=Hospitals");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+
+        });
+
+
+
+        ImageButton accomodations = (ImageButton)findViewById(R.id.imageButton_accomodation);
+
+        accomodations.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
+                // If the navigation drawer is not open then open it, if its already open then close it.
+                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=Accomodation");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+
+            }
+
+        });
+
+
+
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

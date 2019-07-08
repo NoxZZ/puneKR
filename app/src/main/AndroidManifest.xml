@@ -5,13 +5,13 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/pune1"
-        android:label="पुणेkar"
+        android:label="Puneकर"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity
             android:name=".MainActivity"
-            android:label="पुणेkar"
+            android:label="Puneकर"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +22,10 @@
         <activity android:name=".tourist" />
         <activity android:name=".Transport" />
         <activity android:name=".Outskirts"></activity>
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8143579897266817~9053824443"/>
     </application>
 
 </manifest>
