@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
                 // If the navigation drawer is not open then open it, if its already open then close it.
-                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
-                else navDrawer.closeDrawer(Gravity.RIGHT);
+                /*if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);*/
                     // Handle the camera action
                     Intent i = new Intent(MainActivity.this, Transport.class);
                     startActivity(i);
@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
                 // If the navigation drawer is not open then open it, if its already open then close it.
-                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
-                else navDrawer.closeDrawer(Gravity.RIGHT);
+                /*if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);*/
                 // Handle the camera action
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=Restaurants");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
                 // If the navigation drawer is not open then open it, if its already open then close it.
-                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
-                else navDrawer.closeDrawer(Gravity.RIGHT);
+                /*if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);*/
                 // Handle the camera action
                 Intent i = new Intent(MainActivity.this, Outskirts.class);
                 startActivity(i);
@@ -83,8 +83,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
                 // If the navigation drawer is not open then open it, if its already open then close it.
-                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
-                else navDrawer.closeDrawer(Gravity.RIGHT);
+                /*if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);*/
                 // Handle the camera action
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=Police Station");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
@@ -101,8 +101,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
                 // If the navigation drawer is not open then open it, if its already open then close it.
-                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
-                else navDrawer.closeDrawer(Gravity.RIGHT);
+               /* if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                else navDrawer.closeDrawer(Gravity.RIGHT);*/
                 // Handle the camera action
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=Petrol pumps");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
@@ -120,8 +120,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
                 // If the navigation drawer is not open then open it, if its already open then close it.
-                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
-                else navDrawer.closeDrawer(Gravity.RIGHT);
+                //if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                //else navDrawer.closeDrawer(Gravity.RIGHT);
                 // Handle the camera action
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=mechanics");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
@@ -140,8 +140,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
                 // If the navigation drawer is not open then open it, if its already open then close it.
-                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
-                else navDrawer.closeDrawer(Gravity.RIGHT);
+                //if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                //else navDrawer.closeDrawer(Gravity.RIGHT);
                 // Handle the camera action
                 Intent i = new Intent(MainActivity.this, tourist.class);
                 startActivity(i);
@@ -159,8 +159,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
                 // If the navigation drawer is not open then open it, if its already open then close it.
-                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
-                else navDrawer.closeDrawer(Gravity.RIGHT);
+                //if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                //else navDrawer.closeDrawer(Gravity.RIGHT);
                 // Handle the camera action
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=Hospitals");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
@@ -179,8 +179,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 DrawerLayout navDrawer = findViewById(R.id.drawer_layout);
                 // If the navigation drawer is not open then open it, if its already open then close it.
-                if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
-                else navDrawer.closeDrawer(Gravity.RIGHT);
+                //if(!navDrawer.isDrawerOpen(GravityCompat.START)) navDrawer.openDrawer(Gravity.LEFT);
+                //else navDrawer.closeDrawer(Gravity.RIGHT);
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=Accomodation");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
